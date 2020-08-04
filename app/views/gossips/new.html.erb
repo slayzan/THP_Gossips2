@@ -1,0 +1,19 @@
+<h1>Merci de remplir ce formulaire</h1>
+<p>
+<form action= <%=gossips_path%> method="POST">
+	<input type="hidden" name="authenticity_token" value=<%= form_authenticity_token %> >
+  <label for="fname">Titre du gossip :</label>
+  <input type="text" name="gossip_title"><br><br>
+  <label for="lname">Contenu du gossip :</label>
+  <input type="text" name="gossip_content"><br><br>
+  <input type="submit" value="Submit">
+
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Holy guacamole!</strong> You should check in on some of those fields before.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  
+</form>
+</p>
